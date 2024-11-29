@@ -36,7 +36,7 @@ content = '''
     <title>Lenovo ThinkPad E16 Specifications</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
             background-color: rgb(244, 244, 249); 
             padding: 20px;
         }
@@ -45,7 +45,7 @@ content = '''
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background: rgb(255, 255, 255); /* White */
+            background: rgb(255, 255, 255);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             border-radius: 12px;
         }
