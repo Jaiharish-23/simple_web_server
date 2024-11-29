@@ -1,6 +1,6 @@
 # EX01 Developing a Simple Webserver
 
-# Date:28:11:2024
+# Date:29:11:2024
 # AIM:
 To develop a simple webserver to serve html pages and display the configuration details of laptop.
 
@@ -78,15 +78,7 @@ content = '''
             font-weight: bold;
             text-transform: uppercase;
             text-align: left;
-        }
-
-        tr:nth-child(even) {
-            background-color: rgb(224, 255, 255); 
-        }
-
-        tr:nth-child(odd) {
-            background-color: rgb(240, 255, 255); 
-        }
+        } 
 
         tr:hover {
             background-color: rgb(200, 240, 240); 
@@ -104,60 +96,58 @@ content = '''
         <div class="title">💻Lenovo ThinkPad E16 Specifications💻</div>
         <hr border="2" >
         <table>
-            <thead>
                 <tr>
                     <th st>Feature</th>
                     <th>Specification</th>
                 </tr>
-            </thead>
-            <tbody>
-                <tr>
+                <tr style="background-color: rgb(224, 255, 255);">
                     <td>Processor</td>
                     <td>Intel Core i5-1340P / AMD Ryzen 7 7730U</td>
                 </tr>
-                <tr>
+                <tr style="background-color: rgb(240, 255, 255)">
                     <td>Display</td>
                     <td>16.0" WUXGA (1920 x 1200), IPS, Anti-Glare</td>
                 </tr>
-                <tr>
+                <tr style="background-color: rgb(224, 255, 255);">
                     <td>Integrated Graphics</td>
                     <td>Intel Iris Xe / AMD Radeon Graphics</td>
                 </tr>
-                <tr>
+                <tr style="background-color: rgb(240, 255, 255)">
                     <td>Discrete Graphics</td>
                     <td>Optional NVIDIA GeForce RTX 2050</td>
                 </tr>
-                <tr>
+                <tr style="background-color: rgb(224, 255, 255);">
                     <td>Memory</td>
                     <td>Up to 32GB DDR4</td>
                 </tr>
-                <tr>
+                <tr style="background-color: rgb(240, 255, 255)">
                     <td>Storage</td>
                     <td>Up to 1TB SSD</td>
                 </tr>
-                <tr>
+                <tr style="background-color: rgb(224, 255, 255);">
                     <td>Operating System</td>
                     <td>Windows 11 Pro</td>
                 </tr>
-                <tr>
+                <tr style="background-color: rgb(240, 255, 255)">
                     <td>Weight</td>
                     <td>Starting at 1.78kg (3.92 lbs)</td>
                 </tr>
-                <tr>
+                <tr style="background-color: rgb(224, 255, 255);">
                     <td>Battery Life</td>
                     <td>Up to 10 hours </td>
                 </tr>
-                <tr>
+                <tr style="background-color: rgb(240, 255, 255)">
                     <td>Ports</td>
                     <td>USB-C, USB 3.2, HDMI, Ethernet, Audio Jack</td>
                 </tr>
-            </tbody>
         </table>
     </div>
 </body>
 </html>
 
 '''
+
+
 class Myserver(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request received...")
